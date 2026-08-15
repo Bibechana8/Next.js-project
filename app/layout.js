@@ -22,15 +22,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] text-white">
+      <body className="min-h-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-size-[20px_20px] text-white">
         <SeasonWrapper>
-          <Navbar />
-          <div className=" min-h-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] text-white">
-            {children}
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-size-[20px_20px] text-white">
+              {children}
+            </main>
+            <Footer />
           </div>
-           <Footer />
         </SeasonWrapper>
-       
       </body>
     </html>
   );

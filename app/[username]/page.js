@@ -9,7 +9,7 @@ const Username = ({params}) => {
         <img className="rounded-full" width={150} height={150} src="https://media.4-paws.org/9/c/9/7/9c97c38666efa11b79d94619cc1db56e8c43d430/Molly_006-2829x1886-2726x1886-1920x1328.jpg" alt='' />
       </div>
     </div>
-    <div className="info flex justify-center items-center my-24 flex-col gap-2 mb-0">
+    <div className="info flex justify-center items-center my-24 flex-col gap-2 ">
       <div className="font-bold text-lg text-white">
 
       @{params.username}Bibechana Poudel
@@ -24,15 +24,36 @@ const Username = ({params}) => {
     <div className="payment flex gap-3 w-[80%] mt-11 ">
     <div className="supporters w-1/2 bg-slate-900 rounded-lg text-white p-10">
     <h2 className='text-2xl font-bold my-5'>Supporters</h2>
-      <ul className='mx-5'>
-        <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-         <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-         <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-        <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-         <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-          <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-           <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
-            <li className="my-2">Shubam donated $10 with a message "This is amazing!"</li>
+      <ul className='mx-5 text-lg-3xl'>
+        <li className="my-4 flex gap-2 items-center">
+          <img width={33} height={33} className="rounded-full" src="/avatar.gif" alt="avatar" />
+          <span>
+           Shubam donated <span className="font-bold">$10 </span>with a message "I support you girl. lot's of ❤️"
+          </span>
+          
+          </li>
+           <li className="my-4 flex gap-2 items-center">
+          <img width={33} height={33} className="rounded-full" src="/avatar.gif" alt="avatar" />
+          <span>
+           Shubam donated <span className="font-bold">$10</span>with a message"I support you girl. lot's of ❤️"
+          </span>
+          
+          </li>
+           <li className="my-4 flex gap-2 items-center">
+          <img width={33} height={33} className="rounded-full" src="/avatar.gif" alt="avatar" />
+          <span>
+           Shubam donated <span className="font-bold">$10 </span>with a message "I support you girl. lot's of ❤️"
+          </span>
+          
+          </li>
+           <li className="my-4 flex gap-2 items-center">
+          <img width={33} height={33} className="rounded-full" src="/avatar.gif" alt="avatar" />
+          <span>
+           Shubam donated <span className="font-bold">$10 </span>with a message "I support you girl. lot's of ❤️"
+          </span>
+          
+          </li>
+        
       </ul>
     </div>
      <div className="Make payments w-1/2  bg-slate-900 rounded-lg text-white p-10">
@@ -43,7 +64,7 @@ const Username = ({params}) => {
         </div> 
       <input type="text" className='w-full p-3 rounded-lg bg-slate-800' placeholder='Enter your Message' />
         <input type="text" className='w-full p-3 rounded-lg bg-slate-800' placeholder='Enter your Amount' />
-        <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">Pay</button>
+        <button type="button" className=" text-white bg-gradient-to-br from-purple-900 to-blue-900 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">Pay</button>
       </div>
      {/* or choose from these amounts */}
      <div className="flex gap-2 mt-5">
