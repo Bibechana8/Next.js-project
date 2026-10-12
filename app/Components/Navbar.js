@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-950 text-white flex justify-between items-center px-4 h-16">
           <Link className="Logo font-bold text-lg flex justify-center items-center" href={"/"}>
-         < img className="invertImg" src="tea.gif.png" width="30" alt=""/>
+         <img className="invertImg" src="tea.gif.png" width="30" alt=""/>
           <span>Get me A Chai  </span>
             </Link>
 
@@ -28,8 +28,8 @@ const Navbar = () => {
       </ul> */}
       <div className="relative">
         {session && <><button onClick={() => setShowdropdown(!showdropdown)} onBlur={() => {setTimeout(() => {setShowdropdown(false)}, 100)}} id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="inline-flex items-center justify-center text-white mx-4 bg-blue-700 hover:bg-blue-800 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button">
-  Welcome, {session.user.email} 
-  <svg className="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/></svg>
+  Welcome, {session.user.email} http://www.w3.org/2000/svg
+  <svg className="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/></svg>
 </button>
 
 
@@ -40,7 +40,7 @@ const Navbar = () => {
         <Link href="/dashboard" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</Link>
       </li>
       <li>
-        <Link href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Your Page</Link>
+        <Link href={`/${session.user.name}`} className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Your Page</Link>
       </li>
       <li>
         <a onClick={() => {signOut()}} href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
